@@ -1,0 +1,146 @@
+#logo{
+    height: 60px;
+    width: 60px;
+    display: inline;
+    
+}
+html{
+    margin: 0;
+}
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    background-color: rosybrown;
+
+}
+#back{ 
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#card{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+   
+}
+
+.cardimg{
+    display: block;
+    border-radius: 8%;
+    opacity: 1;
+}
+.cards{
+    display: flex;
+    padding: 4%;
+    border-radius: 25%;
+    color: grey;
+    align-self: center;
+}
+#footer{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+#login{
+    margin-left: 97%;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:black;
+    text-decoration: none; 
+}
+#contect{
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+#midea{
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+#more{
+    margin-left: 46%;
+    text-decoration: none;
+    color: black;
+}
+
+input[type=text]{
+    background-color: #f1f1f1;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 40%;
+    margin-top: 200px;
+    width: 20%;
+    height: 7%;
+    border: none;
+    border-radius: 12px;
+}
+#demo{
+    
+    text-align: center;
+    vertical-align: bottom;
+}
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #009578;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    color: #ffffff;
+}
+.image__overlay {
+    position: absolute;
+    border-radius: 8%;
+    height: 150px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+

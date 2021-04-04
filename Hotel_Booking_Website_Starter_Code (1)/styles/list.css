@@ -1,0 +1,105 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+}
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.hotels{
+    margin: 4%;
+    background-color: lightgrey;
+    width: 40%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    display: inline;
+    
+}
+#footer{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+#login{
+    margin-left: 97%;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:black;
+    text-decoration: none; 
+}
+#contect{
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+}
+#midea{
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+#demo{
+    
+    text-align: center;
+    vertical-align: bottom;
+}
+
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    background-color: rosybrown;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+
+}
+#list1{
+    color: black;
+     text-decoration: none;
+     margin-left: 40%;
+}
+#list2{
+    color: black;
+    text-decoration: none;
+    margin-left: 10%;
+}
+#blocks{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img{
+    display: inline-block;
+}
+.tex{
+    display: inline-block;
+    padding: 8%;
+    height: 50%;
+    color: black;
+    text-align: center;
+}
+.hotels:hover{
+    background-color: rosybrown;;
+}

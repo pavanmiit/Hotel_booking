@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <link href="styles\payment.css" rel="stylesheet">
         <title>payment psge</title>
     </head>
     <body>
         <div>
-            <div>
-                <img src="assests/images/logo.png" alt="logo" height="200px" width="150px"/>
-                <a href="login.html" target="_blank">Login</a><br/>
-           </div>
-        <div>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/><br/>
+            <div class="header" id="headerr">
+                <div > <a href="login.html"> <img src="assests/images/logo.png"   alt="logo" id="logo"/></a></div>
+                 <div style="margin-left: 90%; margin-top: 1%;"><button type="button" data-toggle="modal" data-target="#example-modal" id="sign-in-button" class="btn btn-light">Login</button><br/></div>
+            </div>
+        <div class="hotels">
+            <div class="pay"><div class="img" style="display: inline-block;">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="200px" width="200px"/><br/>
+        </div><div class="txt">
             <h3>Radission Blu Hotel</h3><br/><br/>
-            <p># 38 of 1,289 hotel in new Delhi National Higway in New De;hi 110017 Indea</p><br/><br/>
-            <label>Name: </label><label>Jhon Deo</label><br/><br/>
-            <label>Number of Adults: </label><label>2</label><br/><br/>
-            <label>Check-in Date: </label><label>06/06/2020</label><br/><br/>
-            <label>Check-out Date: </label><label></label>11/06/2020<br/><br/>
-            <label>Trriff Breakdown: </label><label>Rs. 1000*2 Adults* 5 Night</label><br/><br/>
-            <label>Total: </label><label>Rs. 10000</label><br/><br/>
-            <a href="payment.html">Pay Now</a>
+            <p># 38 of 1,289 hotel in new Delhi</br> National Higway in New De;hi 110017 Indea</p></div><br/><br/></div></div>
+            <div class="content" id="box">
+                <div class="box1">
+            <label style="font-weight: bold;">Name: </label><label>Jhon Deo</label><br/><br/>
+            <label style="font-weight: bold;">Number of Adults: </label><label>2</label><br/><br/>
+            <label style="font-weight: bold;">Check-in Date: </label><label>06/06/2020</label><br/><br/>
+            <label style="font-weight: bold;">Check-out Date: </label><label></label>11/06/2020<br/><br/>
+        </div>
+            <div  id="box1" style="padding-top: 2%;">
+            <label style="font-weight: bold;">Trriff Breakdown: </label><label>Rs. 1000*2 Adults* 5 Night</label><br/><br/>
+            <label style="font-weight: bold;">Total: </label><label>Rs. 10000</label><br/><br/>
+            </div>
+            <div class="box1">
+                <button type="button" class="btn btn-success">Pay Now</button>
+        </div>
+            </div>
+            <div class="header" id="footer">
+                <button type="button" data-toggle="modal" data-target="#example-modal-contact" style="height: 40px; width: 107px; margin-top: 10px; margin-left: 10px;" class="btn btn-primary">Contuct Us</button>
+                 <div id="demo" style="margin-left: 4%; width: 80%;"><p>@ 2020 ROOM SEARCH PVT. LTD></p></div>
+             <div id="midea" class="flust">
+             <div style="margin-left: 10%;">  <a href="https://www.facebook.com"  target="_blank"><img src="assests/images/facebook.png" height="20" width="22"/></a></div>
+            <div style="margin-left: 5%;"><a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20" width="22"/></a></div>
+              <div><a href="https://twitter.com"  target="_blank"><img src="assests/images/twitter.png" height="20" width="22"/></a></div>
+             </div>  
+              
+             </div> 
+             </div>
         
-        </div>
-        <div>
-            <a href="contact.html" target="_blank">Contact Us</a><br/>
-            <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20" width="22"/></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20" width="22"/></a>
-            <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" height="20" width="22"/></a>
-            <br/>
-            <p>@ 2020 ROOM SEARCH PVT. LTD></p>
-        </div>
-        </div>
-    </body>
-</html>
+             <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="modal-header">Please Login</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                     </div>
+                     
+                     <div class="modal-body">
+                             <form>
+                                 <div class="form-group">
+                                     <label for="registerInputEmail1">Username:</label>
+                                     <input type="email" class="form-control1" id="example-input-email" aria-describedby="emailHelp" placeholder="Enter Username">
+                                 </div>
+                                 <div class="form-group">
+                                     <label for="Password">Password</label>
+                                     <input type="password" class="form-control2" id="example-input-password" aria-describedby="paswordHelp" placeholder="Password">
+                                 </div>
+                                 <div class="modal-footer"></div>
+                                 <button type="register" style="margin-left: 40%;" class="btn btn-primary" id="example-modal">Sign In</button>
+                                 
+                             </form>
+                     </div>
+                     
+                   </div>
+                 </div>
+               </div>
+        
+        
+        
+               <div class="modal fade" id="example-modal-contact" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="modal-header">Get in touch</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                     </div>
+                     
+                     <div class="modal-body">
+                             <form>
+                                 <div class="form-group">
+                                     <p>Thank you for searching out !!!</p>
+                                      <p>Pleace enter your emailid we will get back to you</p></div>
+                                 <div class="form-group">
+                                     <label for="Email">Email:</label>
+                                     <input type="email" class="form-control1" id="example-input-email" aria-describedby="emailHelp" placeholder="Enter Email">
+                                 </div>
+                                 <div class="modal-footer"></div>
+                                 <button type="register" style="margin-left: 80%;" class="btn btn-primary" id="example-modal">Submit</button>
+                                 
+                             </form>
+                     </div>
+                     
+                   </div>
+                 </div>
+               </div>
+         </body>
+        </html>
